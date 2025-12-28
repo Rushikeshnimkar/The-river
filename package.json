@@ -1,0 +1,50 @@
+{
+    "name": "river",
+    "version": "1.0.0",
+    "description": "CLI Chat with a neon river theme",
+    "main": "dist/cli.js",
+    "bin": {
+        "river": "dist/cli.js"
+    },
+    "scripts": {
+        "build": "tsc",
+        "dev": "tsx source/cli.tsx",
+        "start": "node dist/cli.js"
+    },
+    "keywords": [
+        "cli",
+        "chat",
+        "ink",
+        "river"
+    ],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "@supabase/supabase-js": "^2.89.0",
+        "@xmtp/node-sdk": "^4.6.0",
+        "axios": "^1.6.0",
+        "chalk": "^5.3.0",
+        "console-clear": "^1.1.1",
+        "dotenv": "^17.2.3",
+        "ethers": "^5.7.2",
+        "gif-frames": "^1.0.1",
+        "ink": "^4.4.1",
+        "ink-gradient": "^3.0.0",
+        "ink-spinner": "^5.0.0",
+        "ink-text-input": "^5.0.1",
+        "jimp": "^0.22.10",
+        "meow": "^12.1.1",
+        "pngjs": "^7.0.0",
+        "react": "^18.2.0",
+        "zod": "^3.22.4"
+    },
+    "devDependencies": {
+        "@types/console-clear": "^1.1.4",
+        "@types/jimp": "^0.2.1",
+        "@types/node": "^20.0.0",
+        "@types/react": "^18.2.0",
+        "tsx": "^4.0.0",
+        "typescript": "^5.0.0"
+    },
+    "type": "module"
+}
