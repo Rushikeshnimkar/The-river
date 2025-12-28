@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 import { jsx as _jsx } from "react/jsx-runtime";
+import 'dotenv/config'; // Load env vars
 import { render } from 'ink';
 import meow from 'meow';
 import { App } from './app.js';

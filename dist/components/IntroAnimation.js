@@ -120,11 +120,11 @@ export const IntroAnimation = ({ filePath, onComplete, width = 60, height = 25 }
         return () => clearInterval(interval);
     }, [frames, onComplete]);
     if (loading)
-        return _jsx(Box, { children: _jsx(Text, { children: "Synthesizing Braille river..." }) });
+        return _jsx(Box, { children: _jsx(Text, { color: "red", children: "[ ESTABLISHING_ONION_ROUTE_TO_RIVER... ]" }) });
     if (error)
-        return _jsx(Box, { children: _jsxs(Text, { color: "red", children: ["Error: ", error] }) });
+        return _jsx(Box, { children: _jsxs(Text, { color: "red", children: ["FATAL_ERROR: ", error] }) });
     if (frames.length === 0)
         return null;
     const { chars, colors } = frames[currentFrame];
-    return (_jsxs(Box, { flexDirection: "column", alignItems: "center", justifyContent: "center", children: [chars.map((row, y) => (_jsx(Box, { flexDirection: "row", children: row.map((char, x) => (_jsx(Text, { color: colors[y][x] || 'black', children: char }, x))) }, y))), _jsx(Box, { marginTop: 1, children: _jsx(Text, { color: "#39ff14", children: "Visualizing Stream Data..." }) })] }));
+    return (_jsxs(Box, { flexDirection: "column", alignItems: "center", justifyContent: "center", children: [chars.map((row, y) => (_jsx(Box, { flexDirection: "row", children: row.map((char, x) => (_jsx(Text, { color: colors[y][x] || 'black', children: char }, x))) }, y))), _jsx(Box, { marginTop: 1, children: _jsx(Text, { color: "#39ff14", children: "[ TOR_CIRCUIT_ACTIVE :: RIVER_UPLINK_SECURE ]" }) })] }));
 };

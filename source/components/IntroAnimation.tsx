@@ -148,8 +148,8 @@ export const IntroAnimation = ({ filePath, onComplete, width = 60, height = 25 }
         return () => clearInterval(interval);
     }, [frames, onComplete]);
 
-    if (loading) return <Box><Text>Synthesizing Braille river...</Text></Box>;
-    if (error) return <Box><Text color="red">Error: {error}</Text></Box>;
+    if (loading) return <Box><Text color="red">[ ESTABLISHING_ONION_ROUTE_TO_RIVER... ]</Text></Box>;
+    if (error) return <Box><Text color="red">FATAL_ERROR: {error}</Text></Box>;
     if (frames.length === 0) return null;
 
     const { chars, colors } = frames[currentFrame];
@@ -169,7 +169,7 @@ export const IntroAnimation = ({ filePath, onComplete, width = 60, height = 25 }
                 </Box>
             ))}
             <Box marginTop={1}>
-                <Text color="#39ff14">Visualizing Stream Data...</Text>
+                <Text color="#39ff14">[ TOR_CIRCUIT_ACTIVE :: RIVER_UPLINK_SECURE ]</Text>
             </Box>
         </Box>
     );
